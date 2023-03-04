@@ -10,6 +10,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'eslint-config-prettier',
+    'plugin:storybook/recommended',
   ],
   overrides: [],
   parserOptions: {
@@ -27,7 +28,13 @@ module.exports = {
     '@typescript-eslint/consistent-type-imports': 'warn',
     'react/react-in-jsx-scope': 'off',
     'arrow-body-style': ['error', 'as-needed'],
-    'react/self-closing-comp': ['error', { component: true, html: true }],
+    'react/self-closing-comp': [
+      'error',
+      {
+        component: true,
+        html: true,
+      },
+    ],
     'import/order': [
       'error',
       {
@@ -39,7 +46,9 @@ module.exports = {
             position: 'before',
           },
         ],
-        alphabetize: { order: 'asc' },
+        alphabetize: {
+          order: 'asc',
+        },
       },
     ],
   },
