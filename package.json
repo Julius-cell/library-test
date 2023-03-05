@@ -11,7 +11,8 @@
     "build-storybook": "storybook build",
     "prepare": "husky install",
     "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "chromatic": "npx chromatic --project-token=76eb9808dafb --exit-once-uploaded"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -36,6 +37,7 @@
     "@typescript-eslint/parser": "^5.54.0",
     "@vitejs/plugin-react": "^3.1.0",
     "babel-loader": "^8.3.0",
+    "chromatic": "^6.17.1",
     "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-autofix": "^1.1.0",
@@ -53,5 +55,7 @@
   },
   "lint-staged": {
     "*": "prettier --ignore-unknown --write"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "vite-react-ts-sb@0.0.2"
 }
