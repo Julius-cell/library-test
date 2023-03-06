@@ -11,8 +11,9 @@
     "build-storybook": "storybook build",
     "prepare": "husky install",
     "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix",
-    "chromatic": "npx chromatic --project-token=76eb9808dafb --exit-once-uploaded"
+    "lint:fix": "pnpm lint -- --fix",
+    "chromatic": "npx chromatic --project-token=76eb9808dafb --exit-once-uploaded",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "react": "^18.2.0",
