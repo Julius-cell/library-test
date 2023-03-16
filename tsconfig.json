@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "removeComments": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
+  "exclude": ["./src/**/*.stories.*"],
+  "references": [{ "path": "./tsconfig.vite.json" }]
+}
