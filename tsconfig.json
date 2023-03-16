@@ -13,10 +13,11 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "removeComments": true,
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src/**/*"],
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
   "exclude": ["./src/**/*.stories.*"],
   "references": [{ "path": "./tsconfig.vite.json" }]
 }
