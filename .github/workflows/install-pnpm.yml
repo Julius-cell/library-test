@@ -2,8 +2,9 @@ name: pnpm Build with cache
 
 on:
   push:
-    branches:
-      - develop
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
 
 jobs:
   build:
@@ -11,15 +12,21 @@ jobs:
     strategy:
       matrix:
         node-version: [15]
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+
+      - name: Use pnpm '7'
+        uses: pnpm/action-setup@v2
         with:
           version: 7
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
+
       - name: Install dependencies
         run: pnpm install
