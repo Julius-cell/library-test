@@ -1,7 +1,7 @@
 {
   "name": "vite-react-ts-sb",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -62,6 +62,5 @@
   "lint-staged": {
     "*": "prettier . --ignore-unknown --write"
   },
-  "readme": "ERROR: No README data found!",
-  "_id": "vite-react-ts-sb@0.0.2"
+  "readme": "ERROR: No README data found!"
 }
